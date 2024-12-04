@@ -99,7 +99,7 @@
       md=6
     >
       <v-img
-        src="@/assets/lara.jpg"
+        src="/images/lara.jpg"
         cover
         max-height=600
         ref="introductionImage"

@@ -7,7 +7,7 @@
     <template v-slot:prepend>
       <a href="/">
         <v-img
-        src="@/assets/logo.png"
+        src="/images/logo.png"
         width=50
         class="ml-3"
       />

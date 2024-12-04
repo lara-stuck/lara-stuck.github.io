@@ -7,14 +7,19 @@
       align=center
     >
       <v-col
+        cols=12
+        md=6
         align=center
       >
         <v-img
           :src="titleImage"
-          width=400
+          max-width=400
         />
       </v-col>
-      <v-col>
+      <v-col
+        cols=12
+        md=6
+      >
         <blog-paragraph
           class="text-h4 text-secondary"
         >

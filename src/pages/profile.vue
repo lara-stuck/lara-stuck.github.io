@@ -5,7 +5,7 @@
   >
     <v-row>
       <v-img
-        src="@/assets/profile.jpeg"
+        src="/images/profile.jpeg"
       />
     </v-row>
     <v-row>
@@ -45,9 +45,9 @@ export default {
   components: { ServiceArea },
   data: () => ({
     logos: [
-      "/src/assets/vdue-logo-slogan.svg",
-      "/src/assets/unia_logo.svg",
-      "/src/assets/hhu_logo.png",
+      "/images/vdue_logo.svg",
+      "/images/unia_logo.svg",
+      "/images/hhu_logo.png",
     ],
   }),
 }

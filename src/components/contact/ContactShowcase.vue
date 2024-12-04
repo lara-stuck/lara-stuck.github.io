@@ -16,7 +16,7 @@
       >
         <v-img
           class="rounded-circle"
-          src="@/assets/lara_portrait.jpg"
+          src="/images/lara_portrait.jpg"
           max-width=300
         />
       </v-col>

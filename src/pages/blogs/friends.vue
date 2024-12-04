@@ -60,7 +60,7 @@ import DefaultBlogPage from '@/components/blog/DefaultBlogPage.vue'
   components: { DefaultBlogPage },
     data: () => ({
       title: 'Friends',
-      titleImage: '/src/assets/blogs/friends.jpg',
+      titleImage: '/images/blogs/friends.jpg',
       date: new Date(2024, 1, 1),
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id cursus elit. Aenean aliquam, ante vitae venenatis facilisis, lorem ipsum sollicitudin orci, et auctor libero urna sed erat. Phasellus efficitur viverra fringilla. Integer urna ligula, varius sit amet scelerisque at, hendrerit eu lectus. Cras ligula est, mollis id augue sed, mollis varius felis. Donec ut nulla iaculis, volutpat turpis eu, porttitor odio.'
     }),
