@@ -1,7 +1,7 @@
 <template>
   <default-showcase
     :title="title"
-    :transparent="transparent"
+    color="transparent"
     titlePosition="center"
     :link=link
   >
@@ -35,7 +35,6 @@ import DefaultShowcase from './DefaultShowcase.vue'
 export default {
   props: {
     title: String,
-    transparent: Boolean,
     items: Array,
     link: String
   },

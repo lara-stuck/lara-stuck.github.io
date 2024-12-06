@@ -12,6 +12,7 @@
       md=6
       class="split-view"
       @mousemove="updateClipPath"
+      @touchmove.passive="updateClipPath"
       :style="{ height: '600px' }"
     >
     <!-- Vertical line to show mouse position -->
@@ -123,14 +124,15 @@ export default {
     updateClipPath(event) {
       const container = event.currentTarget;
       const rect = container.getBoundingClientRect();
-      const xPercent = ((event.clientX - rect.left) / rect.width) * 100;
+
+      const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+
+      const xPercent = ((clientX - rect.left) / rect.width) * 100;
       const yPercent = 100;
 
-      // Update clip path for top card
       this.clipPathStyle = `polygon(0% 0%, ${xPercent}% 0%, ${xPercent}% ${yPercent}%, 0% ${yPercent}%)`;
 
-      // Update mouse X position for vertical line
-      this.mouseX = event.clientX - rect.left;
+      this.mouseX = clientX - rect.left;
     },
   },
 };

@@ -1,8 +1,7 @@
 <template>
   <card-carousel
     title="Blog"
-    :transparent="false"
-    :items="items"
+r    :items="items"
     link="/blog"
   />
 </template>

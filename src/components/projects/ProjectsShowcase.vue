@@ -1,7 +1,6 @@
 <template>
   <card-carousel
     title="Projekte"
-    :transparent="false"
     :items="items"
     link="/projects"
   />
