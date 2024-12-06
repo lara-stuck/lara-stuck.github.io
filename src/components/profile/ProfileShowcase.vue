@@ -12,6 +12,7 @@
       md=6
       class="split-view"
       @mousemove="updateClipPath"
+      @touchmove="updateClipPath"
       :style="{ height: '600px' }"
     >
     <!-- Vertical line to show mouse position -->
