@@ -3,7 +3,7 @@
     color="transparent"
   >
     <v-row
-    class="pa-6"
+      class="pa-6"
     >
       <v-col
         cols=12
@@ -23,8 +23,8 @@
       <v-col
         cols=12
         sm=5
-        md=5../DefaultCard.vue
-        lg=6./blog/Blo../BlogCard.vue
+        md=5
+        lg=6
         xl=3
         align-self="center"
         class="mt-8 ml-4"
@@ -45,28 +45,39 @@
         </div>
         </v-row>
         <v-row
+          v-for="contactLink in contactLinks"
+          :key="contactLink.description"
           class="mb-3"
           justify=start
         >
-          <a href="mailto:lara.stuck@outlook.com" target="_blank">
+          <a :href="contactLink.link" target="_blank">
             <v-icon
               class="mr-2 pb-1"
-              icon="mdi-email"
+              :icon="contactLink.icon"
             >
-            </v-icon>lara.stuck@outlook.com
-          </a>
-        </v-row>
-        <v-row
-              justify=start>
-          <a href="https://www.linkedin.com/in/lara-stuck-042130216/" target="_blank">
-            <v-icon
-              class="mr-2 pb-1"
-              icon="mdi-linkedin"
-            >
-            </v-icon>LinkedIn
+            </v-icon>{{ contactLink.description }}
           </a>
         </v-row>
       </v-col>
     </v-row>
   </default-showcase>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    contactLinks: [
+      {
+        icon: "mdi-email",
+        link: "mailto:lara.stuck@outlook.com",
+        description: "lara.stuck@outlook.com"
+      },
+      {
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/lara-stuck-042130216/",
+        description: "LinkedIn"
+      },
+    ],
+  }),
+}
+</script>

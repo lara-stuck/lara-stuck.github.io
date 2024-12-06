@@ -3,11 +3,7 @@
     title="Kontakt"
     color="cardbackground"
   >
-    <v-row>
-      <v-col>
-        <contact-showcase />
-      </v-col>
-    </v-row>
+    <contact-showcase />
   </default-page>
 </template>
 
