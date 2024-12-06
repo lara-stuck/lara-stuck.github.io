@@ -1,6 +1,6 @@
 <template>
   <default-page
-    title="Leistungen"
+    title="Mein Angebot"
     color="cardbackground"
   >
     <service-area
