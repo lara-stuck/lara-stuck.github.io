@@ -21,7 +21,8 @@
         v-for="item in navigationItems"
         :key="item.text"
         :to="item.value"
-        class="text-primary"
+        color="primary"
+        :variant="item.variant"
       >{{ item.text }}</v-btn>
     </template>
     <template
@@ -58,27 +59,33 @@ export default {
     navigationItems: [
       {
         text: "Startseite",
-        value: "/"
+        value: "/",
+        variant: "text"
       },
       {
         text: "Über mich",
-        value: "/profile"
+        value: "/profile",
+        variant: "text"
       },
       {
         text: "Blog",
-        value: "/blog"
+        value: "/blog",
+        variant: "text"
       },
       {
         text: "Mein Angebot",
-        value: "/services"
+        value: "/services",
+        variant: "text"
       },
       {
         text: "Projekte",
-        value: "/projects"
+        value: "/projects",
+        variant: "text"
       },
       {
         text: "Kontakt",
-        value: "/contact"
+        value: "/contact",
+        variant: "text"
       }
     ],
   }),
