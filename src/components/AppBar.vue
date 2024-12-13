@@ -23,6 +23,7 @@
         :to="item.value"
         color="primary"
         :variant="item.variant"
+        class="ma-2"
       >{{ item.text }}</v-btn>
     </template>
     <template
@@ -85,7 +86,7 @@ export default {
       {
         text: "Kontakt",
         value: "/contact",
-        variant: "text"
+        variant: "flat"
       }
     ],
   }),
