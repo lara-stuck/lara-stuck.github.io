@@ -5,7 +5,7 @@
   >
     <v-row>
       <v-img
-        src="/images/profile.jpeg"
+        src="/images/profile/profile.jpeg"
       />
     </v-row>
     <v-row>

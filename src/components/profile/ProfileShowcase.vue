@@ -100,7 +100,7 @@
       md=6
     >
       <v-img
-        src="/images/lara.jpg"
+        src="/images/profile/lara.jpg"
         cover
         max-height=600
         ref="introductionImage"

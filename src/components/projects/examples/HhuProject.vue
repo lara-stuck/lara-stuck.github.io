@@ -21,7 +21,7 @@ import ProjectCard from '@/components/projects/ProjectCard.vue'
   components: { ProjectCard },
     data: () => ({
       title: 'Übersetzung mit HHU',
-      titleImage: '/images/hhu_logo_cropped.jpeg',
+      titleImage: '/images/projects/hhu_logo_cropped.jpeg',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id cursus elit. Aenean aliquam, ante vitae venenatis facilisis, lorem ipsum sollicitudin orci, et auctor libero urna sed erat.',
       date: new Date(2024, 8, 1)
     }),
