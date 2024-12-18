@@ -45,9 +45,9 @@ export default {
   components: { ServiceArea },
   data: () => ({
     logos: [
-      "/images/vdue_logo.svg",
-      "/images/unia_logo.svg",
-      "/images/hhu_logo.png",
+      "/images/profile/vdue_logo.svg",
+      "/images/profile/unia_logo.svg",
+      "/images/profile/hhu_logo.jpeg",
     ],
   }),
 }
