@@ -1,6 +1,7 @@
 <template>
   <project-card
     :title="title"
+    :id="id"
     :titleImage="titleImage"
     :summary="summary"
     :date="date"
@@ -21,6 +22,7 @@ import ProjectCard from '@/components/projects/ProjectCard.vue'
   components: { ProjectCard },
     data: () => ({
       title: 'Übersetzung mit dem VdÜ',
+      id: 'vdue',
       titleImage: '/images/projects/vdue_logo_cropped.svg',
       summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id cursus elit. Aenean aliquam, ante vitae venenatis facilisis, lorem ipsum sollicitudin orci, et auctor libero urna sed erat.',
       date: new Date(2024, 3, 1)

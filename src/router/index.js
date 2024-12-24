@@ -12,8 +12,17 @@ import { routes } from 'vue-router/auto-routes'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: setupLayouts(routes),
-  scrollBehavior(to) {
-    return { top: 0 };
+  
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 72,
+        behavior: 'smooth'
+      }; // Scroll to the element with smooth behavior
+    } else {
+      return { top: 0 }; // Default to top of the page
+    }
   },
 })
 

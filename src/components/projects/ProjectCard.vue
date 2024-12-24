@@ -1,5 +1,6 @@
 <template>
    <v-card
+    :id="id"
     flat
     class="ma-4 pa-4 rounded-lg"
   >
@@ -45,6 +46,7 @@
 export default {
   props: {
     title: String,
+    id: String,
     titleImage: String,
     summary: String,
     date: Date

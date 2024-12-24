@@ -20,7 +20,7 @@ import CardCarousel from '../CardCarousel.vue';
       const components = Object.values(modules).map((module) => module.default);
       const componentData = components.map((component, index) => {
         let data =  component.data ? component.data() : {};
-        data.link = "/projects"
+        data.link = `/projects#${data.id}`
         return data;
       });
       const sortedItems = componentData.sort((a, b) => new Date(b.date) - new Date(a.date));
