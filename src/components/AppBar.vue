@@ -20,7 +20,7 @@
       <v-btn
         v-for="item in navigationItems"
         :key="item.text"
-        :to="item.value"
+        @click="goTo(`#${item.value}`, {offset: -64})"
         color="primary"
         :variant="item.variant"
         class="ma-2"
@@ -45,7 +45,7 @@
       <v-list-item
         v-for="item in navigationItems"
         :key="item.text"
-        :to="item.value"
+        @click="goTo(`#${item.value}`)"
         :title="item.text"
         class="text-primary"
       ></v-list-item>
@@ -53,39 +53,45 @@
 </template>
 
 <script >
+import { useGoTo } from 'vuetify'
+
 export default {
+  setup () {
+    const goTo = useGoTo()
+    return { goTo }
+  },
   data: () => ({
     drawer: false,
     bgColor: "transparent",
     navigationItems: [
       {
         text: "Startseite",
-        value: "/",
+        value: "profile-showcase",
         variant: "text"
       },
       {
-        text: "Über mich",
-        value: "/profile",
+        text: "Meine Übersetzungen",
+        value: "services-showcase",
         variant: "text"
       },
       {
-        text: "Blog",
-        value: "/blog",
+        text: "Mein Weg zum Übersetzen",
+        value: "resume-showcase",
         variant: "text"
       },
-      {
-        text: "Mein Angebot",
-        value: "/services",
-        variant: "text"
-      },
-      {
-        text: "Projekte",
-        value: "/projects",
-        variant: "text"
-      },
+      // {
+      //   text: "Mein Angebot",
+      //   value: "/services",
+      //   variant: "text"
+      // },
+      // {
+      //   text: "Projekte",
+      //   value: "/projects",
+      //   variant: "text"
+      // },
       {
         text: "Kontakt",
-        value: "/contact",
+        value: "contact-showcase",
         variant: "flat"
       }
     ],

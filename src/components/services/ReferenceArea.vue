@@ -3,10 +3,10 @@
     <v-col>
       <v-row>
         <v-col
-          class="pt-8 pl-8 pr-8 text-h4 text-primary font-weight-light"
+          class="pt-8 pl-8 pr-8 text-h5 text-primary font-weight-light"
           align=center
         >
-          <div>Referenzen</div>
+          <div>Was Kolleg:innen, Übersetzer:innen und Dozent:innen über meine Arbeit sagen:</div>
         </v-col>
       </v-row>
       <v-row
@@ -19,8 +19,8 @@
           cols=12
           xs=12
           sm=12
-          md=6
-          lg=6
+          md=4
+          lg=4
           xl=4
         >
           <reference-card
@@ -51,23 +51,13 @@ export default {
       },
       {
         name: "Aragorn",
-        source: "The Fellowship of the Ring",
+        source: "(mensch)",
         quote: "I would have gone with you to the end, into the very fires of Mordor.",
       },
       {
         name: "Smeagol",
-        source: "The Two Towers",
+        source: "Hobbit",
         quote: "What's taters, precious? What's taters, eh?",
-      },
-      {
-        name: "Gollum",
-        source: "The Return of the King",
-        quote: "She’s always hungry. She always needs to feed.",
-      },
-      {
-        name: "Albus Dumbledore",
-        source: "The Chamber of Secrets",
-        quote: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
       },
     ],
   }),

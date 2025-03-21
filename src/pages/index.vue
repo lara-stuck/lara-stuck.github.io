@@ -2,11 +2,22 @@
   <v-container
     max-width="1100"
   >
-    <profile-showcase />
+    <profile-showcase
+      id="profile-showcase"
+    />
     <!-- <blog-showcase color="cardbackground" /> -->
-    <services-showcase />
-    <projects-showcase color="cardbackground" />
-    <contact-showcase />
+    <services-showcase
+      id="services-showcase"
+      color="showcaseaccent"
+    />
+    <resume-showcase
+      id="resume-showcase"
+    />
+    <!--<projects-showcase color="cardbackground" />-->
+    <contact-showcase
+      id="contact-showcase"
+      color="showcaseaccent"
+    />
   </v-container>
 </template>
 

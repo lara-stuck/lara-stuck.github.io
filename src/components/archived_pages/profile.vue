@@ -40,9 +40,7 @@
 </template>
 
 <script>
-import ServiceArea from '@/components/services/ServiceArea.vue'
 export default {
-  components: { ServiceArea },
   data: () => ({
     logos: [
       "/images/profile/vdue_logo.svg",

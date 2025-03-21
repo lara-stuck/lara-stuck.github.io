@@ -27,13 +27,13 @@
         lg=6
         xl=6
         align-self="center"
-        class="mt-8 ml-4"
+        class="ml-4"
       >
         <v-row
           class="text-h6 font-weight-light mb-8"
           justify=start
         ><div>
-          Interessiert an einem Austausch oder einer Zusammenarbeit? Melde dich bei mir!
+          Interessiert an einem Austausch oder einer Zusammenarbeit? Ich freue mich über eine Nachricht!
         </div>
         </v-row>
         <v-row

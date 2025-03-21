@@ -2,7 +2,7 @@
   <v-card
     color="transparent"
     elevation=0
-    class="mb-4 rounded-lg"
+    class="mb-4 ml-2 mr-2 rounded-lg"
   >
     <v-row
     align="end"
@@ -42,10 +42,10 @@
         <v-card-text
           class="text-body-1"
         >
-          Ich bin literarische Übersetzerin mit Sitz in Düsseldorf.
-          Romane, Kinderbücher oder Gedichte.
-          Englisch und Italienisch zu Deutsch.
+        Ich bin literarische Übersetzerin mit Sitz in Düsseldorf und übersetze mit Leidenschaft literarische Belletristik,
+        Kinder- und Jugendbücher und Lyrik aus dem Englischen und Italienischen ins Deutsche.
         </v-card-text>
+        <!--
         <v-card-actions>
           <v-btn
             color="secondary"
@@ -54,6 +54,7 @@
             Mehr über mich
           </v-btn>
         </v-card-actions>
+      -->
     </v-card>
 
     <!-- Top card with clipping -->
@@ -84,6 +85,7 @@
           Novels, children's books or poems.
           From English and Italian to German.
         </v-card-text>
+        <!--
         <v-card-actions>
           <v-btn
             color="info"
@@ -92,6 +94,7 @@
             More about me
           </v-btn>
         </v-card-actions>
+      -->
     </v-card>
       
     </v-col>

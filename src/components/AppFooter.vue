@@ -1,5 +1,8 @@
 <template>
   <v-footer height="40" id="footer">
+    <row>
+      
+    </row>
     <v-row
       justify="center"
     >

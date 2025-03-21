@@ -23,7 +23,8 @@ export default createVuetify({
           info: "#D8B89B",
           success: "#506344",
           error: "#CB7C39",
-          cardbackground: "#EEEEED"
+          cardbackground: "#EEEEED",
+          showcaseaccent: "#F5F4F0"
         }
       },
     },
