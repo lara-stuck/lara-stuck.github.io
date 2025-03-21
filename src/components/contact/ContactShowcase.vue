@@ -25,7 +25,7 @@
         sm=5
         md=5
         lg=6
-        xl=3
+        xl=6
         align-self="center"
         class="mt-8 ml-4"
       >

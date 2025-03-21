@@ -1,5 +1,7 @@
 <template>
-  <v-container>
+  <v-container
+    max-width="1100"
+  >
     <profile-showcase />
     <!-- <blog-showcase color="cardbackground" /> -->
     <services-showcase />
