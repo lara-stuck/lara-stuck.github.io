@@ -20,7 +20,7 @@
       <v-btn
         v-for="item in navigationItems"
         :key="item.text"
-        @click="goTo(`#${item.value}`, {offset: -64})"
+        @click="clickNavBarLink(`#${item.value}`)"
         color="primary"
         :variant="item.variant"
         class="ma-2"
@@ -45,7 +45,7 @@
       <v-list-item
         v-for="item in navigationItems"
         :key="item.text"
-        @click="goTo(`#${item.value}`)"
+        @click="clickNavBarLink(`#${item.value}`)"
         :title="item.text"
         class="text-primary"
       ></v-list-item>
@@ -112,6 +112,13 @@ export default {
         this.bgColor = 'transparent';
       }
     },
+    clickNavBarLink(scrollId) {
+      if (this.$route.name !== '/') {
+        this.$router.push(`/${scrollId}`)
+      } else {
+        this.goTo(scrollId, { offset: -64 })
+      }
+    }
   },
 }
 </script>
