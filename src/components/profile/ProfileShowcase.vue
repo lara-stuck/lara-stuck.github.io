@@ -81,9 +81,11 @@
         <v-card-text
           class="text-body-1"
         >
-          I am a literary translator currently living in Düsseldorf.
-          Novels, children's books or poems.
-          From English and Italian to German.
+        I am a literary translator based in Düsseldorf and am passionate about translating literary
+        fiction, children's and young adult books as 
+        well as poetry from the languages English and
+        Italian into German.
+
         </v-card-text>
         <!--
         <v-card-actions>
