@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <profile-showcase />
-    <blog-showcase color="cardbackground" />
+    <!-- <blog-showcase color="cardbackground" /> -->
     <services-showcase />
     <projects-showcase color="cardbackground" />
     <contact-showcase />
