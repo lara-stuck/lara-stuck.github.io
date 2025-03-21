@@ -13,8 +13,7 @@
       <template v-slot:default="{ isHovering, props }">
         <a
           v-bind="props"
-          :class="['text-decoration-none', isHovering ? 'text-primary' : 'text-secondary']"
-          :href="link"
+          :class="['text-decoration-none', isHovering ? 'text-secondary' : 'text-secondary']"
         >
           {{ title }}
         </a>
