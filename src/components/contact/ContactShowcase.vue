@@ -18,6 +18,7 @@
           class="rounded-circle"
           src="/images/contact/lara_portrait.jpg"
           max-width=300
+          alt="Lara Stuck Übersetzerin"
         />
       </v-col>
       <v-col

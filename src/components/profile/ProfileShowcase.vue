@@ -110,6 +110,7 @@
         max-height=600
         ref="introductionImage"
         class="introduction-image"
+        alt="Lara Stuck Übersetzerin"
       >
       </v-img>
     </v-col>
